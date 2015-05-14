@@ -1,0 +1,11 @@
+[Unit]
+Description=screen
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/screen -DmS autoscreen -T xterm-256color %i
+
+[Install]
+WantedBy=graphical.target
+WantedBy=multi-user.target
+WantedBy=default.target

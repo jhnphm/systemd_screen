@@ -13,5 +13,8 @@ mkdir -p ~/.config/systemd/user
 cp screen@.service ~/.config/systemd/user
 
 # Enable for weechat
-systemctl --user screen@weechat.service
+systemctl --user enable screen@weechat.service
+
+# To disable 
+systemctl --user disable screen@weechat.service
 ```
