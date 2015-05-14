@@ -4,6 +4,7 @@ Description=screen
 [Service]
 Type=simple
 ExecStart=/usr/bin/screen -DmS autoscreen -T xterm-256color %i
+Restart=always
 
 [Install]
 WantedBy=graphical.target
