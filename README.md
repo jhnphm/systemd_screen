@@ -18,3 +18,7 @@ systemctl --user enable screen@weechat.service
 # To disable 
 systemctl --user disable screen@weechat.service
 ```
+
+## Notes
+ * Probably won't work for commands with parameters/spaces in them
+ * Untested w/ multiple commands wit the same autostart screen session. 
